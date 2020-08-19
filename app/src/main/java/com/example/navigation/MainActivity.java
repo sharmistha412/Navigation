@@ -15,11 +15,15 @@ private DrawerLayout drawer;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        drawer=findViewById(R.id.drawer_layout);
-        Toolbar tb=findViewById(R.id.tb);
+
+
+        drawer = findViewById(R.id.drawer_layout);
+        Toolbar tb = findViewById(R.id.tb);
+
+
         setSupportActionBar(tb);
 
-        ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(this,drawer,tb,R.string.navigation_drawer_open
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, tb,R.string.navigation_drawer_open
         ,R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
